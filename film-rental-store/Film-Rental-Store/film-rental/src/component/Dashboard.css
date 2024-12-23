@@ -1,0 +1,76 @@
+/* Dashboard.css */
+
+/* Background color for the whole dashboard */
+.dashboard-container {
+  background-color: transparent; /* Transparent background for the entire container */
+  min-height: 100vh; /* Ensure the container fills the screen */
+  padding-top: 20px;
+}
+
+/* Overview heading */
+.overview-heading {
+  font-weight: bold;
+  color: #fff; /* White text for visibility on transparent background */
+}
+
+/* Styling for the overview container */
+.container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for images */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows items to wrap to the next row */
+}
+
+/* For the individual column layout */
+.col {
+  padding: 10px;
+}
+
+/* Make sure images fit into a square box with proper styling */
+.image-container {
+  width: 120px; /* Adjusted width */
+  height: 120px; /* Adjusted height */
+  margin: 0 auto 10px;
+  background-color: #181515; /* Dark grey background for images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive grid layout for three icons in the first row */
+@media (min-width: 576px) {
+  /* 3 columns for small screens (first row) */
+  .col-6 {
+    flex: 1 1 33.33%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* 3 columns for medium screens (first row) */
+  .col-md-4 {
+    flex: 1 1 33.33%;
+  }
+}
+
+@media (min-width: 992px) {
+  /* 3 columns for large screens (first row) */
+  .col-lg-4 {
+    flex: 1 1 33.33%;
+  }
+}
+
+/* Styling for image title */
+.menu-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff; /* White text for visibility */
+  margin-top: 10px;
+}
